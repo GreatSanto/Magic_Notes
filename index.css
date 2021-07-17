@@ -1,0 +1,35 @@
+body{
+    font: 'Raleway', sans-serif;
+    text-align: center;
+    top: 15%;
+    background: linear-gradient(to right, red , yellow); /* Standard syntax */
+}
+h1{
+    font: 600 2.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+h4 {
+    font: 600 1.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.7);
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    width: 100%;
+}
+#notes{
+    text-align: left;
+}
+#impBtn{
+    float: right;
+}
+.noteCard , .card{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px red;
+}
