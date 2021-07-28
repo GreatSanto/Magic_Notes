@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Notes App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">   
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body id="gradient">
@@ -28,17 +29,24 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: white;">Search</button>
             </form>
         </div>
     </nav>
+    <div id="message"></div>
 
 
     <div class="container my-3">
         <h1>Welcome To Magic Notes</h1>
         <div class="card">
             <div class="card-body">
+                <div class="form-group">
+                    <h5 class="card-title">Add title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title"
+                        placeholder="Enter title">
+                </div>
                 <h5 class="card-title">Add a note</h5>
                 <div class="form-group">
                     <textarea class="form-control" id="addTxt" rows="3"></textarea>
@@ -49,10 +57,28 @@
         <h1>Your Notes</h1>
         <div id="notes" class="row container-fluid"> </div>
         <h4>Choose your BackGround</h4>
-    <input class="color1" type="color" name="color1" value="#00ff00">
-    <input class="color2" type="color" name="color2" value="#ff0000">
+        <input class="color1" type="color" name="color1" value="#00ff00">
+        <input class="color2" type="color" name="color2" value="#ff0000">
     </div>
-
+    <footer id="footerzone">
+        <div class="flex-container">
+            <div>
+                <p>About us <br> &copy santo <br><a href="tel:83######17"><span>83######17
+                            &#9990</span></a></p>
+            </div>
+            <div class="contact">
+                <p>Connect with us</p>
+                <div class="icon-bar">
+                    <a href="https://github.com/GreatSanto" class="Github"><i class="fa fa-github"></i><span>Github</span></a>
+                    <a href="https://www.linkedin.com/in/santo8340/" class="linkedin"><i
+                            class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                </div>
+            </div>
+            <div class="address">
+                <p>Address:-<br>New Town, West Bengal<br>Pincode: 700136</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
